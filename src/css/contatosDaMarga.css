@@ -1,0 +1,219 @@
+body{
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.titulo{                       /*configura o estilo do título*/
+	background: #FAF554;
+    font-size: 80px;
+    color: #FE2E93;
+    width: 100%;
+    padding: 20px 0;
+    margin: 0 auto;
+	font-weight: bold;
+	box-sizing: border-box;
+	border-bottom: solid 3px rgb(91, 150, 238);
+}
+
+.titulo h1{                     /*configura o posicionamento e a fonte do título*/
+	position: relative;
+	text-align: center;
+	margin: 10px auto;
+	box-sizing: border-box;
+	       
+}
+
+nav ul{
+	text-align: center;
+	width: auto;
+	padding: 0 auto;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+
+nav li{                         /*configura o estilo do menu de navegação*/
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 28px;
+	padding: 0px 0px 0px 30px;
+	display: inline;
+	box-sizing: border-box;
+}
+
+
+nav li a{                      /*configura o posicionamento do menu de navegação*/
+	color: #FE2E93;
+	position: static;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+nav ul a:hover{
+	color: #33C500;
+}
+
+
+/*Final do cabeçalho padrão*/
+/*-----------------------------------------------------------------------------------------------*/
+
+main{                         /*configura o tamanho do label e input na tela*/
+	width: 100%;
+}
+
+form label, form legend{
+	display: block;
+	font-size: 20px;
+	margin: 0px 0px 7px 0px;
+}
+
+.formulario, form legend{
+	display: block;
+	margin: 5px 0 10px;
+	padding: 7px 25px;
+	width: 90%;
+}
+
+form legend{
+	display: inline-block;
+	font-size: 20px;
+	padding: 7px 0px;
+}
+/*Final do cabeçalho padrão*/
+/*-----------------------------------------------------------------------------------------------*/
+
+main{                         /*configura o tamanho do label e input na tela*/
+	width: 700px;
+	margin: -30px auto;
+}
+
+form label, form legend{
+	display: block;
+	font-size: 20px;
+	margin: 0px 0px 7px 0px;
+}
+
+.formulario, form legend{
+	display: block;
+	margin: 5px 0 10px;
+	padding: 7px 25px;
+	width: 90%;
+}
+
+form legend{
+	display: inline-block;
+	font-size: 20px;
+	padding: 7px 0px;
+}
+
+
+.produtos{
+	width: 120px;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+/*--------------------Estido para o rodapé------------------------*/
+
+.footer{
+	display: block;
+	background: #FAF554;
+	border-top: solid 3px rgb(91, 150, 238);
+	padding: 15px 280px;
+	
+}
+
+.infos-principais-rodape{
+	display: inline-block;
+	
+}
+
+.infos-principais-rodape ul{
+	max-width: 500px;
+}
+
+.promo{
+	float: left;
+	margin: 5px 5px;
+}
+
+
+.infos-principais-rodape a{
+	text-decoration: none;
+	color: #FE2E93;
+	font-size: 25px;
+	padding: 2px 10px 0 0;
+}
+
+.infos-principais-rodape a:hover{
+	color: #33C500;
+}
+
+.botao li{
+	float: right;
+	border-radius: 15px;
+	padding: 5px 5px;
+	margin: 5px 40px;
+	max-width: 180px;
+	box-shadow: #333 2px 2px 2px;
+}
+
+.destaque li{
+	text-decoration: none;
+	background-color: #33C500;
+	color: #FE2E93;
+
+}
+
+
+
+.rede-social{
+	display: inline-block;
+	float: right;
+	color: #FE2E93;
+	font-size: 25px;
+	text-align: center;
+
+}
+
+.rede-social a{
+	text-decoration: none;
+	font-size: 25px;
+	max-width: 100px;
+}
+
+.rede-social li{
+	margin: 10px 10px;
+}
+
+.rede-social img{
+	width: 30px;
+	padding: 0 10px;
+}
+
+
+
+
+.redes-sociais p{
+	display: grid;
+	float: right;
+	text-transform: uppercase;
+	padding: 2px 50px 2px 0;
+	margin: 0 2px 0;
+	color: #FE2E93;
+	justify-content: flex-start;
+
+
+}
+
+.logo-rede-social{
+	display: flex;
+	flex-direction: row;
+	margin: 0 20px 10px;
+
+}
+
+@media(max-width:1300px){
+	.rede-social{
+		display: none;
+	}
+}
