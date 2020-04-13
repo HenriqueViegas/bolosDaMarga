@@ -13,7 +13,7 @@
 			<div class="titulo">
 				<h1>Bolos da Marga</h1>
 				<nav>
-					<ul>
+					<ul id="navbar">
 						<li><a href = "home.html">Home</a></li>
 						<li><a href = "produtos.html">Bolos</a></li>
 						<li><a href = "toposDeBolo.html">Topos de bolo</a></li>
@@ -47,7 +47,7 @@
 			</div>
 		</footer>
 		<script>
-			document.querySelectorAll('a').forEach(link => {
+			document.getElementById('navbar').querySelectorAll('a').forEach(link => {
 				const conteudo = document.getElementById('conteudo')
 
 				link.onclick = function(e){
