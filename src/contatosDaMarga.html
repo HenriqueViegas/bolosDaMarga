@@ -1,75 +1,25 @@
+<form class="formulario-contato">
+	<label for="nomecompleto">Nome completo</label>
+	<input type="text" id="nomecompleto" class="formulario" placeholder="Nome completo por favor" required>
 
-<html>
-	<title>Bolos da Marga</title>
-	<link rel = "stylesheet" href="./css/reset.css">
-	<link rel = "stylesheet" href="./css/bolosMargarete.css">
-	<link href = "https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+	<label for="telefone">Telefone</label>
+	<input type="tel" id="telefone" class="formulario" placeholder="(XX) XXXXX-XXXX" required>
 
-	<body>
-		<header>
-			<div class="titulo">
-				<h1 id="inicio">Bolos da Marga</h1>
-				<nav>
-					<ul>
-						<li><a href = "index.html">Home</a></li>
-						<li><a href = "produtos.html">Bolos</a></li>
-						<li><a href = "toposDeBolo.html">Topos de bolo</a></li>
-						<li><a href = "doces.html">Doces</a></li>
-						<li><a href = "promocao.html">Promoções</a></li>
-						<li><a href = "contatosDaMarga.html">Contato</a></li>
-					</ul>
-				</nav>
+	<label for="email">E-mail</label>
+	<input type="email" id="email" class="formulario" placeholder="seuemail@domínio.com(.br)" required>
 
-			</div>
-		</header>
+	<label for="observacao">Observação</label>
+	<textarea cols="30" rows="10" type="text" id="observacao" class="formulario" placeholder="Insira suas observações. Ex: Gostaria/Não gostaria de receber e-mails, Contato exclusivo por Whatsapp, etc"></textarea>
 
-		<main>
-			<form class="formulario-contato">
-				<label for="nomecompleto">Nome completo</label>
-				<input type="text" id="nomecompleto" class="formulario" placeholder="Nome completo por favor" required>
+	<fieldset>
+		<legend>De qual forma gostaria que entrassemos em contato?</legend>
 
-				<label for="telefone">Telefone</label>
-				<input type="tel" id="telefone" class="formulario" placeholder="(XX) XXXXX-XXXX" required>
+		<label for="radio-whatsapp"><input type="radio" name="preferecontato" id="radio-whatsapp" checked>Whatsapp</label>
 
-				<label for="email">E-mail</label>
-				<input type="email" id="email" class="formulario" placeholder="seuemail@domínio.com(.br)" required>
+		<label for="radio-email"><input type="radio" name="preferecontato" id="radio-email">E-Mail</label>
 
-				<label for="observacao">Observação</label>
-				<textarea cols="30" rows="10" type="text" id="observacao" class="formulario" placeholder="Insira suas observações. Ex: Gostaria/Não gostaria de receber e-mails, Contato exclusivo por Whatsapp, etc"></textarea>
+		<label for="radio-telefone"><input type="radio" name="preferecontato" id="radio-telefone">Telefone</label>
+	</fieldset>
 
-				<fieldset>
-					<legend>De qual forma gostaria que entrassemos em contato?</legend>
-
-					<label for="radio-whatsapp"><input type="radio" name="preferecontato" id="radio-whatsapp" checked>Whatsapp</label>
-
-					<label for="radio-email"><input type="radio" name="preferecontato" id="radio-email">E-Mail</label>
-
-					<label for="radio-telefone"><input type="radio" name="preferecontato" id="radio-telefone">Telefone</label>
-				</fieldset>
-
-				<input type="submit" value="Enviar Informações" class="botaoFormulario">
-
-
-			</form>
-		</main>
-
-		<footer class="footer">
-			<div class="infos-principais-rodape">
-				<ul>
-					<a class="link" href="index.html"><li>Quem somos</li></a>
-					<a class="promo" href="promocao.html.html"><li>Promoções</li></a>
-					<a class="botao destaque" href="#inicio"><li>Voltar ao início</li></a>
-				</ul>
-			</div>
-			<div class="rede-social">
-				<ul>	
-					<li>Nossas redes sociais</li>
-					<a href="https://www.facebook.com/BolosMargareteBechara/" target="_blank"><img src="../img/logo_facebook.png" alt="logo do facebook"></a>
-					<a href="https://www.instagram.com/bolos.margarete/" target="_blank"><img src="../img/logo_instagram.png" alt="logo do intragam"></a>
-					<a href="" target="_blank"><img src="../img/logo_whatsapp.png" alt="logo do whatsapp"></a>
-				</ul>
-			</div>
-		</footer>
-	</body>
-
-</html>
+	<input type="submit" value="Enviar Informações" class="botaoFormulario">
+</form>

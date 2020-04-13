@@ -14,7 +14,7 @@
 				<h1>Bolos da Marga</h1>
 				<nav>
 					<ul>
-						<li><a href = "index.html">Home</a></li>
+						<li><a href = "home.html">Home</a></li>
 						<li><a href = "produtos.html">Bolos</a></li>
 						<li><a href = "toposDeBolo.html">Topos de bolo</a></li>
 						<li><a href = "doces.html">Doces</a></li>
@@ -27,16 +27,14 @@
 
 		</header>
 
-		<main>
-		<img class="bolo-home" src="bolo-home.jpg">
-		</main>
+		<main id="conteudo"><img class="bolo-home" src="../img/bolo-home.jpg"></main>
 
 		<footer class="footer">
 			<div class="infos-principais-rodape">
 				<ul>
-					<a class="link" href="index.html"><li>Quem somos</li></a>
-					<a class="promo" href="promocao.html.html"><li>Promoções</li></a>
-					<a class="botao destaque" href="#inicio"><li>Voltar ao início</li></a>
+					<a class="link" href="quemSomos.html"><li>Quem somos</li></a>
+					<a class="promo" href="promocao.html"><li>Promoções</li></a>
+					<a class="botao destaque" href="dsadsa"><li>Voltar ao início</li></a>
 				</ul>
 			</div>
 			<div class="rede-social">
@@ -47,5 +45,17 @@
 					<a href="" target="_blank"><img src="../img/logo_whatsapp.png" alt="logo do whatsapp"></a>
 				</ul>
 			</div>
-		</footer>			
+		</footer>
+		<script>
+			document.querySelectorAll('a').forEach(link => {
+				const conteudo = document.getElementById('conteudo')
+
+				link.onclick = function(e){
+					e.preventDefault()
+					fetch(link.href)
+						.then(resp => resp.text())
+						.then(html => conteudo.innerHTML = html)
+				}
+			})
+		</script>			
 	</body>
