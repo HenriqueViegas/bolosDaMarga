@@ -2,6 +2,19 @@
 
 <section class = "produtos">
 	
+	<div ng-repeat="lista in bolos" class="produto-card">
+		<img src = "{{lista.imagem}}" alt="Bolo Branco">
+		<h2>{{lista.nomeDoBolo}}</h2>
+		<div class="produto-descricao">
+			<h3>descrição:</h3>
+			<p>{{lista.descricao}}</p>
+			<span>{{lista.gluten}}</span>
+		</div>
+		<div class="produto-preco">
+			<p>{{lista.preco}}</p>
+		</div>
+	</div>
+
 	<div class="produto-card">
 		<img src = "../img/morangoCremeChantili.jpg" alt="Bolo Branco">
 		<h2>Bolo Branco</h2>

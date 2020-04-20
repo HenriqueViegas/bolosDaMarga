@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="BolosDaMarga">
 	<head>
 		<meta charset="UTF-8">
 		<title>Bolos da Marga</title>
 		<link rel="stylesheet" href="./css/reset.css">
 		<link rel = "stylesheet" href="./css/bolosMargarete.css">
 		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+		<script src="./js/main.js"></script>
 	</head>
 
-	<body>
+	<body ng-controller="ConteudoController">
 		<header>
 			<div class="titulo">
 				<h1>Bolos da Marga</h1>
@@ -46,16 +48,4 @@
 				</ul>
 			</div>
 		</footer>
-		<script>
-			document.getElementById('navbar').querySelectorAll('a').forEach(link => {
-				const conteudo = document.getElementById('conteudo')
-
-				link.onclick = function(e){
-					e.preventDefault()
-					fetch(link.href)
-						.then(resp => resp.text())
-						.then(html => conteudo.innerHTML = html)
-				}
-			})
-		</script>			
 	</body>
