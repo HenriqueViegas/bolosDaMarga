@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="bolos">
 	<head>
 		<meta charset="UTF-8">
 		<title>Bolos da Marga</title>
 		<link rel="stylesheet" href="./css/reset.css">
 		<link rel = "stylesheet" href="./css/bolosMargarete.css">
 		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+		<script src="./js/libs/angular.min.js"></script>
+		<script src="./js/libs/angular-animate.min.js"></script>
+		<script src="./js/libs/angular-cookies.min.js"></script>
+		<script src="./js/libs/angular-resource.min.js"></script>
+		<script src="./js/libs/angular-route.min.js"></script>
+		<script src="./js/main.js"></script>
+		<script src="./js/controllers/main-controller.js"></script>
 	</head>
 
 	<body>
@@ -14,21 +21,19 @@
 				<h1>Bolos da Marga</h1>
 				<nav>
 					<ul>
-						<li><a href = "index.html">Home</a></li>
-						<li><a href = "produtos.html">Bolos</a></li>
-						<li><a href = "toposDeBolo.html">Topos de bolo</a></li>
-						<li><a href = "doces.html">Doces</a></li>
-						<li><a href = "promocao.html">Promoções</a></li>
-						<li><a href = "contatosDaMarga.html">Contato</a></li>
+						<li><a href = "#!/home">Home</a></li>
+						<li><a href = "#!/produtos">Bolos</a></li>
+						<li><a href = "#!/toposDeBolo">Topos de bolo</a></li>
+						<li><a href = "#!/doces">Doces</a></li>
+						<li><a href = "#!/promocoes">Promoções</a></li>
+						<li><a href = "#!/contato">Contato</a></li>
 					</ul>
 				</nav>
-
 			</div>
-
 		</header>
 
 		<main>
-		<img class="bolo-home" src="bolo-home.jpg">
+		<ng-view></ng-view>
 		</main>
 
 		<footer class="footer">
